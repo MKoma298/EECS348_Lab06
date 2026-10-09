@@ -8,7 +8,7 @@ input="The five boxing wizards jump quickly"
 
 # Question 1: In the input string, match the substring "bo", followed by any sequence of characters (including none), and ending with "ng".
 echo "Question 1:"
-echo "$input" | grep -oP ''
+echo "$input" | grep -oP 'bo.?ng'
 
 # Question 2: Match any word in the input string that is at least seven letters long.
 echo "Question 2:"
@@ -24,7 +24,7 @@ echo "$input" | grep -oP '' | wc
 
 # # Question 4: Filter the lines with the Email contents
 echo "Question 4:"
-grep -E '' Emails.txt
+grep -E '^EMAIL' Emails.txt
 
 # Question 5: Filter the lines with the commands (COUNT/NEXT/READ)
 echo "Question 5:"
